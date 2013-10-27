@@ -28,22 +28,31 @@
 		h2{
 			color: #fff;
 		}
-		ul.links{
-			margin-top: 40px;
+		hr{
+			border-color: #645C5C;
+			margin-top: 25px;
 		}
-		ul.links li{
-			display: inline;
-			padding: 20px;
+		.dates{
+			background: rgba(255, 0, 0, 0.25);
+			padding: 5px;
 		}
-		ul.links li a{
-			font-size: 34px;
+		.details h3, h4{
+			font-family: 'Open Sans Condensed', sans-serif;
+		 	color: #eee;
 		}
-		#link_text{
-			font-size: 24px;
-			font-family: flex;
-			color: #eee;
-			padding-top: 20px;
-			padding-bottom: 20px;
+		.details{
+		 	color: #eee;
+		}
+		.detail1{
+			text-align: left;
+		}
+		.detail2{
+			text-align: right;
+		}
+		.details a{
+			background-color: rgba(136, 213, 200, 0.14);
+			padding: 0px 10px 0px 10px;
+			text-decoration: none;
 		}
 	</style>
 </head>
@@ -53,30 +62,22 @@
 		<h2 style="margin-top: 5%; margin-left: 0%;">and</h2>
 		<h1 class="name" style="margin-top: 10%; text-align: center;">Shrithi</h1>
 		<h2 style="margin-left: 50%; font-size: 32px; margin-top: 5%;">are getting married . . .</h2>
-		<div id="link_text"></div>
-		<ul class="links">
-			<li><a href="#" class="down-links" data-link="when">When?</a></li>
-			<li><a href="#" class="down-links" data-link="where">Where?</a></li>
-			<li><a href="#">Special</a></li>
-		</ul>
-	</div>
+		<hr>
+		<div class="details">
+			<div class="detail1 five columns">
+				<h4><a href="#">&laquo; Event</a></h4>
+			</div>
+			<div class="dates five columns">
+				<h3>14<sup>th</sup> & 15<sup>th</sup> November 2013</h3>
+			</div>
+			<div class="detail2 five columns">
+				<h4><a href="#">Say Hello &raquo;</a></h4>
+			</div>
+		</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
 <script src="js/jquery.snow.js" type="text/javascript"></script>
 <script>
 	$.fn.snow({flakeColor: '#fff'});
-
-	$(document).ready(function(){
-		$("a.down-links").click(function(){
-			var link = $(this).data('link')
-			if(link=="when"){
-				$("#link_text").html("on 14th & 15th").hide().fadeIn(500);
-			}
-			else{
-				$("#link_text").html("At Nagavara!").hide().fadeIn(500);
-			}
-		});
-	});
-
 </script>
 </html>
