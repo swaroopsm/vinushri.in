@@ -58,5 +58,32 @@ ul.links li a{
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
+hr{
+	border-color: #645C5C;
+	margin-top: 25px;
+}
+.dates{
+	background: rgba(255, 0, 0, 0.25);
+	padding: 5px;
+}
+.details h3, h4{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #eee;
+}
+.details{
+	color: #eee;
+}
+.detail1{
+	text-align: left;
+}
+.detail2{
+	text-align: right;
+}
+.details a{
+	background-color: rgba(136, 213, 200, 0.14);
+	padding: 0px 10px 0px 10px;
+	text-decoration: none;
+}
+
 /* Media queries */
 
