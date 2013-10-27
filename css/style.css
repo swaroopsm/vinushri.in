@@ -85,5 +85,12 @@ hr{
 	text-decoration: none;
 }
 
+.pattern{
+	font-family: wwdesigns;
+	color: #fff;
+	font-size: 20px;
+	padding: 8px;
+}
+
 /* Media queries */
 
