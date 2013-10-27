@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<title>VinuShri</title>
+	<link rel="stylesheet" href="css/base.css" type="text/css">
+	<link rel="stylesheet" href="css/layout.css" type="text/css">
+	<link rel="stylesheet" href="css/skeleton.css" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		body{
+			background: #163755;
+		}
+		@font-face
+		{
+			font-family: flex;
+			src: url(fonts/FlexDisplay-Thin.otf);
+		}
+		h1, h2{
+			font-family: flex;
+		}
+		h1{
+			color: #eee;
+			text-shadow: 0px -2px 18px #eee;
+		}
+		h2{
+			color: #fff;
+		}
+		ul.links{
+			margin-top: 40px;
+		}
+		ul.links li{
+			display: inline;
+			padding: 20px;
+		}
+		ul.links li a{
+			font-size: 34px;
+		}
+		#link_text{
+			font-size: 24px;
+			font-family: flex;
+			color: #eee;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="name" style="margin-top: 5%">Vinod</h1>
+		<h2 style="margin-top: 5%; margin-left: 0%;">and</h2>
+		<h1 class="name" style="margin-top: 10%; text-align: center;">Shrithi</h1>
+		<h2 style="margin-left: 50%; font-size: 32px; margin-top: 5%;">are getting married . . .</h2>
+		<div id="link_text"></div>
+		<ul class="links">
+			<li><a href="#" class="down-links" data-link="when">When?</a></li>
+			<li><a href="#" class="down-links" data-link="where">Where?</a></li>
+			<li><a href="#">Special</a></li>
+		</ul>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script src="js/jquery.snow.js" type="text/javascript"></script>
+<script>
+	$.fn.snow({flakeColor: '#fff'});
+
+	$(document).ready(function(){
+		$("a.down-links").click(function(){
+			var link = $(this).data('link')
+			if(link=="when"){
+				$("#link_text").html("on 14th & 15th").hide().fadeIn(500);
+			}
+			else{
+				$("#link_text").html("At Nagavara!").hide().fadeIn(500);
+			}
+		});
+	});
+
+</script>
+</html>
