@@ -109,6 +109,13 @@
 
 		$.fn.snow({flakeColor: '#fff'});
 
+		$("body").on("mousewheel", function(){
+			var pos = $(document).scrollTop();
+			if(pos > 2000){
+				$(".img-overlay").fadeIn(3000);
+			}
+		});
+
 		$('a[href^="#"]').click(function() {
                 $('html,body').animate({ scrollTop: $(this.hash).offset().top}, 500);
 								if(this.hash == "#join"){
