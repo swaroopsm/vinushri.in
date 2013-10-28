@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 	<link rel="stylesheet" href="css/skeleton.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/images.css" type="text/css">
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	<style type="text/css">
@@ -17,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-		<h1 class="topDesign" style="line-height:1; margin-left: 0%;">P</h1>
+		<h1 class="topDesign" style="line-height:1; margin-left: 0%;display: none;">P</h1>
 		<h1 class="name" style="margin-top: 5%">Vinod</h1>
 		<h2 style="margin-top: 5%; margin-left: 0%;">and</h2>
 		<h1 class="name" style="margin-top: 10%; text-align: center;">Shrithi</h1>
@@ -25,7 +26,7 @@
 		<hr>
 		<div class="details">
 			<div class="detail1 five columns">
-				<h4><a href="#"><span class="pattern">1</span> Event <span class="pattern">1</span></a></h4>
+				<h4><a href="#event"><span class="pattern">1</span> Event <span class="pattern">1</span></a></h4>
 			</div>
 			<div class="dates five columns">
 				<h3>14<sup>th</sup> & 15<sup>th</sup> November 2013</h3>
@@ -34,20 +35,63 @@
 				<h4><a href="#"><span class="pattern">1</span> Say Hello <span class="pattern">1</span></a></h4>
 			</div>
 	</div>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
 	
+	
+	<div class="event" id="event">
+		<div class="dates five columns">
+			<h3>Reception</h3>
+			<p>
+				Thursday, 14th November 2013 <br>
+				06:30 PM Onwards
+			</p>
+		</div>
+		<div class="dates five columns">
+			<h3>Venue</h3>
+			<p>
+				Sri Lakshmi Srinivasa Lakyana Mantapa <br>
+				Outer Ring Road, Nagavara,
+				Bangalore - 560045
+			</p>
+		</div>
+		<div class="dates five columns">
+			<h3>Wedding</h3>
+			<p>
+				Friday, 15th November 2013 <br>
+				 09:18 AM - 10:06 AM Onwards
+			</p>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 		<div class="map">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
 			<iframe style="width: 100%; height:80%;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lakshmi+Srinivasa+Convention+Hall,+HBR+Layout+5th+Block,+HBR+Layout,+Bangalore,+Karnataka&amp;aq=0&amp;oq=la&amp;sll=12.953997,77.63094&amp;sspn=0.836455,1.349945&amp;ie=UTF8&amp;hq=Lakshmi+Srinivasa+Convention+Hall,&amp;hnear=HBR+Layout+5th+Block,+HBR+Layout,+Bangalore,+Bangalore+Urban,+Karnataka&amp;t=m&amp;ll=13.041645,77.626305&amp;spn=0.010034,0.013733&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe><br /><a href="https://www.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lakshmi+Srinivasa+Convention+Hall,+HBR+Layout+5th+Block,+HBR+Layout,+Bangalore,+Karnataka&amp;aq=0&amp;oq=la&amp;sll=12.953997,77.63094&amp;sspn=0.836455,1.349945&amp;ie=UTF8&amp;hq=Lakshmi+Srinivasa+Convention+Hall,&amp;hnear=HBR+Layout+5th+Block,+HBR+Layout,+Bangalore,+Bangalore+Urban,+Karnataka&amp;t=m&amp;ll=13.041645,77.626305&amp;spn=0.010034,0.013733&amp;z=16&amp;iwloc=A">View Larger Map</a>
 		</div>
+	</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
 <script src="js/jquery.snow.js" type="text/javascript"></script>
 <script>
-	$.fn.snow({flakeColor: '#fff'});
+
+	$(document).ready(function(){
+
+		$.fn.snow({flakeColor: '#fff'});
+
+		$('a[href^="#"]').click(function() {
+                console.log(this.hash)
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top}, 500);
+                return false;
+                e.preventDefault();
+    });
+
+	})
+
 </script>
 </html>
