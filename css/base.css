@@ -287,7 +287,7 @@ p{
 	color: #eee;
 }
 
-ul li a, a:hover, a:visited{
+a, a:hover, a:visited{
 	text-decoration: none;
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: #eee;

@@ -102,8 +102,34 @@ h3, h4{
 	margin-top: 600px;
 }
 
-.event .dates p{
+.dates p{
 	padding: 0px;
 }
+
+.join-us{
+	margin-top: 500px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.join-display{
+
+}
+
+.quote{
+	font-family: wwdesigns;
+	font-size: 70px;
+	padding: 20px;
+	color: #fff;
+}
+
+.left{
+	text-align: left;
+}
+
+.right{
+	text-align: right;
+}
+
 /* Media queries */
 
